@@ -2,6 +2,10 @@
   "name": "adonisjs_example_firebase",
   "version": "1.0.0",
   "private": true,
+
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "build": "ENV_SILENT=true node ace build --production",
     "start1": "node ace serve --watch",
