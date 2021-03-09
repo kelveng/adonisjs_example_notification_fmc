@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "node ace build --production",
-    "start": "node server.js",
-    "dev": "node ace serve --watch",
+    "build": "ENV_SILENT=true node ace build --production",
+    "start1": "node ace serve --watch",
+    "start": "ENV_SILENT=true node build/server.js",
     "lint": "eslint . --ext=.ts",
     "format": "prettier --write ."
   },
@@ -24,12 +24,17 @@
   },
   "dependencies": {
     "-": "0.0.1",
+    "@adonisjs/auth": "^5.1.1",
     "@adonisjs/core": "^5.0.4-preview-rc-2.1",
+    "@adonisjs/lucid": "^10.0.0",
     "@adonisjs/repl": "^1.1.6",
     "firebase-admin": "^9.5.0",
+    "luxon": "^1.26.0",
+    "pg": "^8.5.1",
     "proxy-addr": "^2.0.6",
     "reflect-metadata": "^0.1.13",
     "save": "^2.4.0",
-    "source-map-support": "^0.5.19"
+    "source-map-support": "^0.5.19",
+    "url-parse": "^1.5.1"
   }
 }

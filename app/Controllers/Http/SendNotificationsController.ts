@@ -1,5 +1,5 @@
 import { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
-import FirebaseProvider from '@ioc:Adonis/service/Firebase'
+const FirebaseProvider = ioc.use('Adonis/service/Firebase')
 
 
 export default class SendNotificationsController {
